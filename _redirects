@@ -1,0 +1,2 @@
+# Redirect www to root (set this in Cloudflare DNS instead if using custom domain)
+/home  /  301
