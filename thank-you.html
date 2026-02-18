@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — ETECH IT Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Google Ads Conversion Tracking — replace with your actual snippet -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+    gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/XXXXXXX' });
+  </script> -->
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #080b12;
+      --cyan: #00d4ff;
+      --emerald: #34d399;
+      --white: #f0f2f7;
+      --gray-300: #8892a4;
+      --gray-500: #505a6e;
+      --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --mono: 'Fira Code', monospace;
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background-image:
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(0,212,255,0.06), transparent),
+        radial-gradient(ellipse 40% 30% at 80% 80%, rgba(99,102,241,0.04), transparent);
+    }
+    .card {
+      max-width: 520px;
+      background: rgba(13,17,25,0.8);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--emerald), transparent);
+    }
+    .check-circle {
+      width: 64px; height: 64px;
+      background: rgba(52,211,153,0.1);
+      border: 2px solid rgba(52,211,153,0.3);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.8rem;
+      margin: 0 auto 1.5rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--gray-300);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .tl-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      color: var(--gray-300);
+    }
+    .tl-item .num {
+      width: 28px; height: 28px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--cyan);
+      flex-shrink: 0;
+      font-weight: 600;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: var(--cyan);
+      color: var(--bg);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transition: box-shadow 0.3s, transform 0.2s;
+    }
+    a.btn:hover {
+      box-shadow: 0 4px 30px rgba(0,212,255,0.25);
+      transform: translateY(-2px);
+    }
+    .phone {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--gray-500);
+    }
+    .phone a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="check-circle">✓</div>
+    <h1>You're all set!</h1>
+    <p>Thank you for reaching out. An ETECH security specialist will contact you shortly to schedule your free assessment.</p>
+
+    <div class="timeline">
+      <div class="tl-item"><span class="num">1</span> We review your submission (within 1 hour)</div>
+      <div class="tl-item"><span class="num">2</span> A specialist calls to understand your environment</div>
+      <div class="tl-item"><span class="num">3</span> We run a complimentary security assessment</div>
+      <div class="tl-item"><span class="num">4</span> You get a full report with actionable recommendations</div>
+    </div>
+
+    <a href="/" class="btn">← Back to Home</a>
+    <p class="phone">Need immediate help? Call <a href="tel:+13055550100">(305) 555-0100</a></p>
+  </div>
+</body>
+</html>
