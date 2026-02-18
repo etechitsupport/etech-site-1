@@ -137,14 +137,14 @@
 
     .logo-mark {
       width: 34px; height: 34px;
-      background: var(--bg-hero);
+      background: var(--teal);
       border-radius: 8px;
       display: grid;
       place-items: center;
       font-family: var(--mono);
       font-size: 0.55rem;
       font-weight: 600;
-      color: var(--teal-on-dark);
+      color: #fff;
       letter-spacing: 0.04em;
     }
 
@@ -185,7 +185,7 @@
 
     .nav-cta {
       padding: 0.5rem 1.15rem;
-      background: var(--bg-hero);
+      background: var(--teal);
       color: #fff !important;
       border-radius: 7px;
       font-weight: 700;
@@ -195,7 +195,7 @@
     }
 
     .nav-cta:hover {
-      box-shadow: 0 4px 20px rgba(27, 33, 51, 0.25);
+      box-shadow: 0 4px 20px var(--teal-glow);
       transform: translateY(-1px);
     }
 
@@ -256,13 +256,13 @@
     .sticky-cta-btn:hover { opacity: 0.9; }
 
     /* ══════════════════════════
-       HERO — dark island
+       HERO — seamless light
     ══════════════════════════ */
     .hero {
       position: relative;
       z-index: 2;
-      background: var(--bg-hero);
-      color: #fff;
+      background: var(--bg);
+      color: var(--ink);
       overflow: hidden;
     }
 
@@ -271,18 +271,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 70% 50% at 20% 80%, rgba(14, 127, 138, 0.1), transparent),
-        radial-gradient(ellipse 50% 40% at 80% 20%, rgba(99, 102, 241, 0.06), transparent);
-      pointer-events: none;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0; right: 0;
-      height: 80px;
-      background: linear-gradient(to bottom, transparent, var(--bg));
+        radial-gradient(ellipse 60% 50% at 10% 90%, rgba(14, 127, 138, 0.06), transparent),
+        radial-gradient(ellipse 50% 40% at 85% 10%, rgba(14, 127, 138, 0.04), transparent);
       pointer-events: none;
     }
 
@@ -293,7 +283,7 @@
       grid-template-columns: 1.1fr 0.9fr;
       gap: clamp(2rem, 5vw, 4.5rem);
       align-items: center;
-      padding: max(100px, 12vh) clamp(1.25rem, 4vw, 3rem) 5rem;
+      padding: max(108px, 13vh) clamp(1.25rem, 4vw, 3rem) 4.5rem;
       position: relative;
     }
 
@@ -302,18 +292,18 @@
       align-items: center;
       gap: 0.55rem;
       padding: 0.3rem 0.85rem 0.3rem 0.5rem;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: var(--teal-dim);
+      border: 1px solid rgba(14,127,138,0.15);
       border-radius: 100px;
       font-size: 0.7rem;
       font-weight: 600;
-      color: var(--teal-on-dark);
+      color: var(--teal);
       margin-bottom: 1.5rem;
     }
 
     .hero-eyebrow .pulse {
       width: 7px; height: 7px;
-      background: var(--teal-on-dark);
+      background: var(--teal);
       border-radius: 50%;
       position: relative;
     }
@@ -323,7 +313,7 @@
       position: absolute;
       inset: -3px;
       border-radius: 50%;
-      border: 1px solid var(--teal-on-dark);
+      border: 1px solid var(--teal);
       animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
     }
 
@@ -338,11 +328,11 @@
       line-height: 1.1;
       letter-spacing: -0.03em;
       margin-bottom: 1.2rem;
-      color: #fff;
+      color: var(--ink);
     }
 
     .hero h1 .em {
-      color: var(--teal-on-dark);
+      color: var(--teal);
       position: relative;
     }
 
@@ -351,15 +341,15 @@
       position: absolute;
       bottom: 2px; left: 0; right: 0;
       height: 3px;
-      background: var(--teal-on-dark);
-      opacity: 0.25;
+      background: var(--teal);
+      opacity: 0.2;
       border-radius: 2px;
     }
 
     .hero-sub {
       font-size: 1rem;
       line-height: 1.7;
-      color: rgba(255,255,255,0.6);
+      color: var(--ink-muted);
       max-width: 500px;
       margin-bottom: 1.75rem;
     }
@@ -375,27 +365,28 @@
       align-items: center;
       gap: 0.45rem;
       font-size: 0.8rem;
-      color: rgba(255,255,255,0.55);
+      color: var(--ink-muted);
     }
 
     .hero-proof-item .check {
       width: 17px; height: 17px;
-      background: rgba(45, 212, 191, 0.15);
-      border: 1px solid rgba(45, 212, 191, 0.3);
+      background: var(--green-dim);
+      border: 1px solid rgba(22, 163, 74, 0.2);
       border-radius: 50%;
       display: grid;
       place-items: center;
       font-size: 0.5rem;
-      color: var(--teal-on-dark);
+      color: var(--green);
       flex-shrink: 0;
     }
 
-    /* ── HERO FORM (light card on dark hero) ── */
+    /* ── HERO FORM ── */
     .hero-form-wrap {
       background: var(--bg-card);
       border-radius: 14px;
       padding: 2rem;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.2), 0 0 0 1px rgba(255,255,255,0.05);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
       position: relative;
       color: var(--ink);
     }
@@ -475,7 +466,7 @@
     .hf-submit {
       width: 100%;
       padding: 0.8rem;
-      background: var(--bg-hero);
+      background: var(--teal);
       color: #fff;
       border: none;
       border-radius: 8px;
@@ -488,7 +479,7 @@
     }
 
     .hf-submit:hover {
-      box-shadow: 0 6px 24px rgba(27, 33, 51, 0.3);
+      box-shadow: 0 6px 24px var(--teal-glow);
       transform: translateY(-2px);
     }
 
@@ -861,11 +852,12 @@
     .cta-banner-inner {
       max-width: 1280px;
       margin: 0 auto;
-      background: var(--bg-hero);
+      background: var(--bg-card);
+      border: 1px solid rgba(14,127,138,0.15);
       border-radius: 16px;
       padding: 3.5rem 2.5rem;
       text-align: center;
-      color: #fff;
+      color: var(--ink);
       position: relative;
       overflow: hidden;
     }
@@ -874,7 +866,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 50% 80% at 50% 0%, rgba(14, 127, 138, 0.12), transparent);
+      background: radial-gradient(ellipse 60% 70% at 50% 0%, rgba(14, 127, 138, 0.05), transparent);
       pointer-events: none;
     }
 
@@ -886,7 +878,7 @@
     }
 
     .cta-banner p {
-      color: rgba(255,255,255,0.6);
+      color: var(--ink-muted);
       font-size: 0.95rem;
       margin-bottom: 1.75rem;
       max-width: 480px;
@@ -919,23 +911,24 @@
     }
 
     .btn-light {
-      background: #fff;
-      color: var(--bg-hero);
+      background: var(--teal);
+      color: #fff;
     }
 
     .btn-light:hover {
-      box-shadow: 0 4px 24px rgba(255,255,255,0.15);
+      box-shadow: 0 4px 24px var(--teal-glow);
       transform: translateY(-2px);
     }
 
     .btn-ghost {
-      background: rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.8);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: transparent;
+      color: var(--ink-soft);
+      border: 1px solid var(--border-med);
     }
 
     .btn-ghost:hover {
-      background: rgba(255,255,255,0.12);
+      border-color: var(--ink-faint);
+      background: rgba(30,37,54,0.03);
     }
 
     /* ══════════════════════════
@@ -1087,7 +1080,7 @@
     .cf-submit {
       width: 100%;
       padding: 0.8rem;
-      background: var(--bg-hero);
+      background: var(--teal);
       color: #fff;
       border: none;
       border-radius: 8px;
@@ -1100,7 +1093,7 @@
     }
 
     .cf-submit:hover {
-      box-shadow: 0 6px 24px rgba(27, 33, 51, 0.25);
+      box-shadow: 0 6px 24px var(--teal-glow);
       transform: translateY(-2px);
     }
 
