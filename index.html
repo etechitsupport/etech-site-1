@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ETECH IT Services | Managed IT & Cybersecurity, Miami, FL</title>
-  <meta name="description" content="Miami's premier managed IT & cybersecurity provider. 24/7 threat monitoring, compliance expertise, cloud solutions. Free security assessment, call (305) 555-0100.">
+  <meta name="description" content="Full-stack managed IT and cybersecurity for Miami businesses. 24/7 SOC, EDR, MDR, compliance, and helpdesk. One flat rate. Call (305) 555-0100.">
   <meta name="keywords" content="managed IT services Miami, cybersecurity company Miami, MSP Florida, IT support Miami, HIPAA compliance IT, SOC 2 managed services">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ETECH IT Services | Enterprise Cybersecurity & Managed IT">
-  <meta property="og:description" content="Enterprise-grade managed IT, cybersecurity, and compliance, trusted by healthcare, finance, and manufacturing organizations for over a decade.">
+  <meta property="og:title" content="ETECH IT Services | Managed IT & Cybersecurity">
+  <meta property="og:description" content="Full-stack managed IT and cybersecurity, one flat monthly rate. Serving Miami and nationwide.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://etechitsupport.com">
 
@@ -41,19 +41,16 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      /* Warm, muted light palette - never pure white or pure black */
       --bg:          #f4f2ef;
       --bg-warm:     #eae7e2;
       --bg-card:     #ffffff;
       --bg-input:    #f9f8f6;
       --bg-hero:     #1b2133;
-      --bg-hero-2:   #232a3e;
 
       --ink:         #1e2536;
       --ink-soft:    #3d4663;
       --ink-muted:   #6b7490;
       --ink-faint:   #9da3b5;
-      --ink-ghost:   #c2c7d4;
 
       --teal:        #0e7f8a;
       --teal-deep:   #0a5e66;
@@ -63,10 +60,7 @@
 
       --green:       #16a34a;
       --green-dim:   rgba(22, 163, 74, 0.08);
-      --red:         #dc4a4a;
-      --red-dim:     rgba(220, 74, 74, 0.07);
       --amber:       #c08a19;
-      --amber-dim:   rgba(192, 138, 25, 0.08);
 
       --border:      rgba(30, 37, 54, 0.08);
       --border-med:  rgba(30, 37, 54, 0.12);
@@ -92,7 +86,7 @@
       overflow-x: hidden;
     }
 
-    /* ── SUBTLE TEXTURE ── */
+    /* ── TEXTURE ── */
     .texture {
       position: fixed;
       inset: 0;
@@ -211,54 +205,7 @@
     }
 
     /* ══════════════════════════
-       STICKY BOTTOM CTA
-    ══════════════════════════ */
-    .sticky-cta {
-      position: fixed;
-      bottom: -80px;
-      left: 0; right: 0;
-      z-index: 999;
-      background: rgba(27, 33, 51, 0.95);
-      backdrop-filter: blur(16px);
-      padding: 0.7rem clamp(1rem, 3vw, 2rem);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      transition: bottom 0.5s var(--ease);
-    }
-
-    .sticky-cta.show { bottom: 0; }
-
-    .sticky-cta p {
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.8);
-    }
-
-    .sticky-cta p span {
-      color: var(--teal-on-dark);
-    }
-
-    .sticky-cta-btn {
-      padding: 0.55rem 1.3rem;
-      background: var(--teal-on-dark);
-      color: var(--bg-hero);
-      border: none;
-      border-radius: 7px;
-      font-family: var(--font);
-      font-size: 0.875rem;
-      font-weight: 700;
-      cursor: pointer;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: opacity 0.2s;
-    }
-
-    .sticky-cta-btn:hover { opacity: 0.9; }
-
-    /* ══════════════════════════
-       HERO - seamless light
+       HERO
     ══════════════════════════ */
     .hero {
       position: relative;
@@ -545,7 +492,7 @@
     .trust-badge .ico { font-size: 0.8rem; }
 
     /* ══════════════════════════
-       SECTIONS (light body)
+       SECTIONS
     ══════════════════════════ */
     .section {
       position: relative;
@@ -578,112 +525,6 @@
       background: var(--teal);
       border-radius: 1px;
     }
-
-    /* ══════════════════════════
-       PAIN POINTS
-    ══════════════════════════ */
-    .pain {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-
-    .pain-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .pain-header h2 {
-      font-size: clamp(1.75rem, 2.8vw, 2.375rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.6rem;
-      line-height: 1.2;
-      color: var(--ink);
-    }
-
-    .pain-header p {
-      color: var(--ink-muted);
-      font-size: 1.0625rem;
-      max-width: 540px;
-      margin: 0 auto;
-      line-height: 1.65;
-    }
-
-    .pain-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
-    .pain-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.75rem;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.4s var(--ease), box-shadow 0.4s;
-    }
-
-    .pain-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .pc-icon {
-      width: 40px; height: 40px;
-      border-radius: 9px;
-      display: grid;
-      place-items: center;
-      font-size: 1.1rem;
-      margin-bottom: 1.1rem;
-    }
-
-    .pc-icon-red   { background: var(--red-dim); }
-    .pc-icon-amber { background: var(--amber-dim); }
-    .pc-icon-teal  { background: var(--teal-dim); }
-
-    .pc-problem {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--red);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.4rem;
-    }
-
-    .pain-card:nth-child(2) .pc-problem { color: var(--amber); }
-    .pain-card:nth-child(3) .pc-problem { color: var(--amber); }
-
-    .pain-card h3 {
-      font-size: 1.125rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      line-height: 1.3;
-      color: var(--ink);
-    }
-
-    .pain-card p {
-      font-size: 0.9375rem;
-      color: var(--ink-muted);
-      line-height: 1.65;
-      margin-bottom: 0.85rem;
-    }
-
-    .pc-solution {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.45rem;
-      padding: 0.75rem;
-      background: var(--green-dim);
-      border: 1px solid rgba(22, 163, 74, 0.12);
-      border-radius: 8px;
-      font-size: 0.9375rem;
-      color: var(--green);
-      line-height: 1.55;
-      font-weight: 500;
-    }
-
-    .pc-solution .arrow { flex-shrink: 0; margin-top: 1px; }
 
     /* ══════════════════════════
        SERVICES
@@ -754,183 +595,252 @@
     }
 
     /* ══════════════════════════
-       SOCIAL PROOF
+       PRICING
     ══════════════════════════ */
-    .proof {
+    .pricing {
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
 
-    .proof-stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
+    .pricing-header {
       margin-bottom: 3rem;
     }
 
-    .ps-card {
-      text-align: center;
-      padding: 1.75rem 1.25rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
+    .pricing-header h2 {
+      font-size: clamp(1.75rem, 2.8vw, 2.375rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      color: var(--ink);
     }
 
-    .ps-num {
-      font-family: var(--mono);
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: var(--teal);
-      line-height: 1;
-      margin-bottom: 0.4rem;
-    }
-
-    .ps-label {
-      font-size: 0.9375rem;
+    .pricing-header p {
       color: var(--ink-muted);
-      font-weight: 500;
+      font-size: 1.0625rem;
+      line-height: 1.65;
     }
 
-    .testimonials {
+    .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.5rem;
+      align-items: start;
     }
 
-    .testi {
-      padding: 1.5rem;
+    /* Full-stack card */
+    .price-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.4s var(--ease), box-shadow 0.3s;
-    }
-
-    .testi:hover {
-      transform: translateY(-2px);
+      border-radius: 14px;
+      padding: 2.5rem;
       box-shadow: var(--shadow-md);
-    }
-
-    .testi-stars {
-      color: var(--amber);
-      font-size: 0.875rem;
-      letter-spacing: 2px;
-      margin-bottom: 0.65rem;
-    }
-
-    .testi p {
-      font-size: 0.9375rem;
-      color: var(--ink-soft);
-      line-height: 1.7;
-      flex: 1;
-      margin-bottom: 1.1rem;
-      font-style: italic;
-    }
-
-    .testi-author {
-      font-size: 0.9375rem;
-      font-weight: 700;
-      color: var(--ink);
-    }
-
-    .testi-role {
-      font-size: 0.8125rem;
-      color: var(--ink-faint);
-      margin-top: 0.1rem;
-    }
-
-    /* ══════════════════════════
-       CTA BANNER - dark island
-    ══════════════════════════ */
-    .cta-banner {
-      padding: 0 clamp(1.25rem, 4vw, 3rem);
-      position: relative;
-      z-index: 2;
-    }
-
-    .cta-banner-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      background: var(--bg-card);
-      border: 1px solid rgba(14,127,138,0.15);
-      border-radius: 16px;
-      padding: 3.5rem 2.5rem;
-      text-align: center;
-      color: var(--ink);
       position: relative;
       overflow: hidden;
     }
 
-    .cta-banner-inner::before {
+    .price-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-deep));
+    }
+
+    .price-card-label {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--teal);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .price-amount {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .price-dollar {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink-muted);
+      line-height: 1;
+    }
+
+    .price-number {
+      font-family: var(--mono);
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .price-period {
+      font-size: 1rem;
+      color: var(--ink-muted);
+      font-weight: 500;
+    }
+
+    .price-sub {
+      font-size: 0.9375rem;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
+    }
+
+    .price-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .price-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.9375rem;
+      color: var(--ink-soft);
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.4;
+    }
+
+    .price-features li:last-child { border-bottom: none; }
+
+    .price-features .tick {
+      width: 18px; height: 18px;
+      background: var(--green-dim);
+      border: 1px solid rgba(22, 163, 74, 0.2);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 0.5rem;
+      color: var(--green);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .price-btn {
+      display: block;
+      width: 100%;
+      padding: 0.875rem;
+      background: var(--teal);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font);
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: box-shadow 0.3s, transform 0.2s;
+    }
+
+    .price-btn:hover {
+      box-shadow: 0 6px 24px var(--teal-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Enterprise card */
+    .enterprise-card {
+      background: var(--bg-hero);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 380px;
+    }
+
+    .enterprise-card::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 60% 70% at 50% 0%, rgba(14, 127, 138, 0.05), transparent);
+      background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(45,212,191,0.06), transparent);
       pointer-events: none;
     }
 
-    .cta-banner h2 {
+    .enterprise-label {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--teal-on-dark);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .enterprise-heading {
       font-size: clamp(1.5rem, 2.5vw, 2rem);
       font-weight: 800;
-      margin-bottom: 0.6rem;
+      color: #fff;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
       position: relative;
     }
 
-    .cta-banner p {
-      color: var(--ink-muted);
-      font-size: 1.0625rem;
-      margin-bottom: 1.75rem;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+    .enterprise-desc {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.65;
+      margin-bottom: 2.5rem;
       position: relative;
     }
 
-    .cta-banner-actions {
+    .enterprise-actions {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
       gap: 0.75rem;
       position: relative;
     }
 
-    .btn {
-      display: inline-flex;
+    .enterprise-btn-primary {
+      display: flex;
       align-items: center;
+      justify-content: center;
       gap: 0.4rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.875rem;
+      background: var(--teal-on-dark);
+      color: var(--bg-hero);
       border-radius: 8px;
       font-family: var(--font);
       font-size: 1rem;
       font-weight: 700;
       text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s;
-      border: none;
+      transition: opacity 0.2s;
     }
 
-    .btn-light {
-      background: var(--teal);
-      color: #fff;
-    }
+    .enterprise-btn-primary:hover { opacity: 0.9; }
 
-    .btn-light:hover {
-      box-shadow: 0 4px 24px var(--teal-glow);
-      transform: translateY(-2px);
-    }
-
-    .btn-ghost {
+    .enterprise-btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.875rem;
       background: transparent;
-      color: var(--ink-soft);
-      border: 1px solid var(--border-med);
+      color: rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      font-family: var(--font);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: border-color 0.25s, color 0.25s;
     }
 
-    .btn-ghost:hover {
-      border-color: var(--ink-faint);
-      background: rgba(30,37,54,0.03);
+    .enterprise-btn-secondary:hover {
+      border-color: var(--teal-on-dark);
+      color: var(--teal-on-dark);
     }
 
     /* ══════════════════════════
@@ -1216,10 +1126,8 @@
     @media (max-width: 1024px) {
       .hero-inner { grid-template-columns: 1fr; }
       .hero-form-wrap { max-width: 520px; }
-      .pain-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
       .svc-grid { grid-template-columns: repeat(2, 1fr); }
-      .proof-stats { grid-template-columns: repeat(2, 1fr); }
-      .testimonials { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 560px; }
       .contact-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -1241,9 +1149,6 @@
       }
       .svc-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
       .hf-row, .cf-row { grid-template-columns: 1fr; }
-      .cta-banner-inner { padding: 2.25rem 1.5rem; }
-      .cta-banner-actions { flex-direction: column; }
-      .cta-banner-actions .btn { width: 100%; justify-content: center; }
       .footer-grid { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; gap: 0.6rem; text-align: center; }
     }
@@ -1251,8 +1156,7 @@
     @media (max-width: 480px) {
       .hero h1 { font-size: 1.9rem; }
       .hero-proof { gap: 0.6rem; }
-      .proof-stats { grid-template-columns: 1fr; max-width: 320px; margin-left: auto; margin-right: auto; }
-      .sticky-cta p { display: none; }
+      .price-number { font-size: 3rem; }
     }
   </style>
 </head>
@@ -1269,7 +1173,7 @@
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#services">Services</a></li>
-        <li><a href="#results">Results</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="tel:+13055550100" class="nav-phone">📞 (305) 555-0100</a></li>
         <li><a href="#hero-form" class="nav-cta">Free Assessment</a></li>
@@ -1278,25 +1182,19 @@
     </div>
   </nav>
 
-  <!-- ═══ STICKY BOTTOM CTA ═══ -->
-  <div class="sticky-cta" id="stickyCta">
-    <p>Don't leave your business exposed. <span>Get protected today.</span></p>
-    <a href="#hero-form" class="sticky-cta-btn">Free Assessment →</a>
-  </div>
-
-  <!-- ═══ HERO (dark island) ═══ -->
+  <!-- ═══ HERO ═══ -->
   <div class="hero" id="hero">
     <div class="hero-inner">
       <div>
         <div class="hero-eyebrow">
           <span class="pulse"></span>
-          Miami's #1 Managed IT & Cybersecurity Provider
+          Miami's Managed IT & Cybersecurity Partner
         </div>
-        <h1>A data breach costs<br>$4.88M on average.<br><span class="em">We make sure it's $0.</span></h1>
-        <p class="hero-sub">ETECH delivers enterprise-grade cybersecurity, 24/7 threat monitoring, and fully managed IT, so you can stop worrying about ransomware, compliance, and downtime.</p>
+        <h1>Your IT. Secured.<br><span class="em">One flat monthly rate.</span></h1>
+        <p class="hero-sub">Full-stack managed IT and cybersecurity — 24/7 SOC, helpdesk, compliance, and everything in between. Flat per-user pricing, no surprises.</p>
         <div class="hero-proof">
-          <div class="hero-proof-item"><span class="check">✓</span> 10+ years protecting businesses</div>
-          <div class="hero-proof-item"><span class="check">✓</span> 99.9% uptime guaranteed</div>
+          <div class="hero-proof-item"><span class="check">✓</span> 10+ years in business</div>
+          <div class="hero-proof-item"><span class="check">✓</span> 99.9% uptime SLA</div>
           <div class="hero-proof-item"><span class="check">✓</span> HIPAA, SOC 2, PCI-DSS ready</div>
         </div>
       </div>
@@ -1337,7 +1235,7 @@
               <option value="cybersecurity">Cybersecurity</option>
               <option value="cloud">Cloud Solutions</option>
               <option value="compliance">Compliance</option>
-              <option value="other">Other</option>
+              <option value="pricing">Pricing Info</option>
             </select>
           </div>
           <button type="submit" class="hf-submit">Get My Free Assessment →</button>
@@ -1360,155 +1258,96 @@
     </div>
   </div>
 
-  <!-- ═══ PAIN POINTS ═══ -->
-  <div class="section pain">
-    <div class="section-inner">
-      <div class="pain-header">
-        <div class="tag sr">The Problem</div>
-        <h2 class="sr">Your business is one click away<br>from a catastrophe</h2>
-        <p class="sr">Most organizations don't know they've been breached until 197 days later. Here's what keeps your peers up at night, and how we solve it.</p>
-      </div>
-
-      <div class="pain-grid">
-        <div class="pain-card sr">
-          <div class="pc-icon pc-icon-red">🎯</div>
-          <div class="pc-problem">The Threat</div>
-          <h3>Ransomware shuts you down</h3>
-          <p>One employee clicks a phishing link. Your entire network is encrypted. Operations halt. The ransom: $250K. The real cost: your reputation.</p>
-          <div class="pc-solution">
-            <span class="arrow">→</span>
-            <span>Our EDR + MDR stack detects and isolates threats in real time, before encryption begins. 24/7 SOC monitoring included.</span>
-          </div>
-        </div>
-        <div class="pain-card sr sr-d1">
-          <div class="pc-icon pc-icon-amber">⚠️</div>
-          <div class="pc-problem">The Risk</div>
-          <h3>Compliance audit is coming</h3>
-          <p>HIPAA, SOC 2, PCI-DSS: regulations are tightening. Non-compliance fines can reach millions, and losing certification means losing clients.</p>
-          <div class="pc-solution">
-            <span class="arrow">→</span>
-            <span>Regular compliance assessments, gap analysis, and remediation. We keep you audit-ready year-round.</span>
-          </div>
-        </div>
-        <div class="pain-card sr sr-d2">
-          <div class="pc-icon pc-icon-amber">💸</div>
-          <div class="pc-problem">The Cost</div>
-          <h3>IT is draining your budget</h3>
-          <p>In-house IT teams cost $150K+ per person. Break-fix providers nickel-and-dime you. And you still don't have 24/7 coverage.</p>
-          <div class="pc-solution">
-            <span class="arrow">→</span>
-            <span>Flat per-user monthly pricing. Unlimited support. Predictable costs at a fraction of in-house. No surprises.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- ═══ SERVICES ═══ -->
   <div class="section services" id="services">
     <div class="section-inner">
       <div class="tag sr">What We Do</div>
-      <h2 class="sr" style="font-size:clamp(1.75rem,2.8vw,2.375rem); font-weight:800; letter-spacing:-0.02em; margin-bottom:0.5rem; color:var(--ink);">Full-spectrum managed IT & cybersecurity</h2>
-      <p class="sr" style="color:var(--ink-muted); max-width:560px; line-height:1.65; margin-bottom:2.5rem; font-size:1.0625rem;">One provider. Every service. Complete accountability.</p>
+      <h2 class="sr" style="font-size:clamp(1.75rem,2.8vw,2.375rem); font-weight:800; letter-spacing:-0.02em; margin-bottom:0.5rem; color:var(--ink);">Everything your business needs, covered.</h2>
+      <p class="sr" style="color:var(--ink-muted); max-width:520px; line-height:1.65; margin-bottom:2.5rem; font-size:1.0625rem;">One provider. One bill. Complete accountability.</p>
 
       <div class="svc-grid">
         <div class="svc-card sr">
           <div class="svc-num">01</div>
           <h3>🔒 Managed Cybersecurity</h3>
-          <p>All-in-one RMM, EDR, MDR, next-gen AV, and ransomware detection. Real-time threat isolation, 24/7 monitoring, automated patching, detailed reporting.</p>
+          <p>EDR, MDR, next-gen AV, and 24/7 SOC threat monitoring. Real-time isolation before damage is done.</p>
           <div class="svc-tags"><span class="svc-tag">EDR</span><span class="svc-tag">MDR</span><span class="svc-tag">SIEM</span><span class="svc-tag">SOC</span></div>
         </div>
         <div class="svc-card sr sr-d1">
           <div class="svc-num">02</div>
           <h3>☁️ Cloud Solutions</h3>
-          <p>Cloud migration, optimization, and management. Scalable infrastructure that grows with you. Critical data backed up and always accessible.</p>
+          <p>Migration, management, and optimization. Scalable, always-on infrastructure backed up and secured.</p>
           <div class="svc-tags"><span class="svc-tag">Migration</span><span class="svc-tag">SaaS</span><span class="svc-tag">Hybrid</span></div>
         </div>
         <div class="svc-card sr sr-d2">
           <div class="svc-num">03</div>
           <h3>📋 Compliance & Risk</h3>
-          <p>Regular assessments of your cybersecurity compliance and network health. We uncover hidden risks and attack vectors before they become breaches.</p>
+          <p>Continuous assessments, gap analysis, and remediation. We keep you audit-ready year-round.</p>
           <div class="svc-tags"><span class="svc-tag">HIPAA</span><span class="svc-tag">SOC 2</span><span class="svc-tag">PCI</span></div>
         </div>
         <div class="svc-card sr sr-d3">
           <div class="svc-num">04</div>
-          <h3>🖥️ Managed IT Services</h3>
-          <p>Full network administration: fault analysis, performance management, provisioning. Set price per user per month. A fraction of in-house costs.</p>
-          <div class="svc-tags"><span class="svc-tag">Per-User</span><span class="svc-tag">Unlimited</span></div>
+          <h3>🖥️ Managed IT & Helpdesk</h3>
+          <p>Unlimited support, automated patching, and full network administration. A fraction of in-house costs.</p>
+          <div class="svc-tags"><span class="svc-tag">Helpdesk</span><span class="svc-tag">Unlimited</span></div>
         </div>
         <div class="svc-card sr sr-d4">
           <div class="svc-num">05</div>
           <h3>🌐 Network Management</h3>
-          <p>Wi-Fi, internet, LAN/WAN infrastructure. Performance monitoring, fault analysis, provisioning with automated patching and compliance reporting.</p>
+          <p>Wi-Fi, LAN/WAN, performance monitoring, and provisioning with automated patching and reporting.</p>
           <div class="svc-tags"><span class="svc-tag">Wi-Fi</span><span class="svc-tag">LAN</span><span class="svc-tag">WAN</span></div>
         </div>
         <div class="svc-card sr sr-d5">
           <div class="svc-num">06</div>
           <h3>⚡ IT On Demand</h3>
-          <p>Monthly or block hours. Server down? Malware attack? Power loss? We resolve it fast. Full range of skills from wiring to compliance.</p>
+          <p>Need a fast fix? Block hours or monthly retainer. Server down, malware, power loss — we move fast.</p>
           <div class="svc-tags"><span class="svc-tag">Block Hrs</span><span class="svc-tag">On-Call</span></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ═══ SOCIAL PROOF ═══ -->
-  <div class="section proof" id="results">
+  <!-- ═══ PRICING ═══ -->
+  <div class="section pricing" id="pricing">
     <div class="section-inner">
-      <div class="tag sr">Results</div>
-      <h2 class="sr" style="font-size:clamp(1.75rem,2.8vw,2.375rem); font-weight:800; letter-spacing:-0.02em; margin-bottom:0.5rem; color:var(--ink);">Trusted by organizations that<br>can't afford to go down</h2>
-      <p class="sr" style="color:var(--ink-muted); max-width:540px; line-height:1.65; margin-bottom:2.5rem; font-size:1.0625rem;">Over a decade of protecting businesses across healthcare, finance, manufacturing, and education.</p>
-
-      <div class="proof-stats">
-        <div class="ps-card sr">
-          <div class="ps-num">10+</div>
-          <div class="ps-label">Years protecting businesses</div>
-        </div>
-        <div class="ps-card sr sr-d1">
-          <div class="ps-num">99.9%</div>
-          <div class="ps-label">Uptime guarantee</div>
-        </div>
-        <div class="ps-card sr sr-d2">
-          <div class="ps-num">24/7</div>
-          <div class="ps-label">Threat monitoring & SOC</div>
-        </div>
-        <div class="ps-card sr sr-d3">
-          <div class="ps-num">&lt;15m</div>
-          <div class="ps-label">Avg. incident response</div>
-        </div>
+      <div class="pricing-header">
+        <div class="tag sr">Pricing</div>
+        <h2 class="sr">Simple, transparent pricing.</h2>
+        <p class="sr">No tiers. No add-ons. Everything included from day one.</p>
       </div>
 
-      <div class="testimonials">
-        <div class="testi sr">
-          <div class="testi-stars">★★★★★</div>
-          <p>"ETECH's comprehensive cybersecurity framework has been instrumental in safeguarding our sensitive information. Their proactive monitoring and quick response to potential threats have been exceptional."</p>
-          <div class="testi-author">Dr. Emily R.</div>
-          <div class="testi-role">Director of IT, Healthcare Provider</div>
+      <div class="pricing-grid">
+        <div class="price-card sr">
+          <div class="price-card-label">Full-Stack Managed IT & Cybersecurity</div>
+          <div class="price-amount">
+            <span class="price-dollar">$</span>
+            <span class="price-number">350</span>
+            <span class="price-period">/ user / month</span>
+          </div>
+          <p class="price-sub">Everything included. Billed monthly. Cancel anytime.</p>
+          <ul class="price-features">
+            <li><span class="tick">✓</span> 24/7 SOC threat monitoring & response</li>
+            <li><span class="tick">✓</span> EDR + MDR + next-gen antivirus</li>
+            <li><span class="tick">✓</span> Ransomware detection & real-time isolation</li>
+            <li><span class="tick">✓</span> Managed IT helpdesk (unlimited tickets)</li>
+            <li><span class="tick">✓</span> Automated patching & vulnerability management</li>
+            <li><span class="tick">✓</span> Compliance support (HIPAA, SOC 2, PCI-DSS)</li>
+            <li><span class="tick">✓</span> Cloud management & backup</li>
+            <li><span class="tick">✓</span> Network monitoring & management</li>
+          </ul>
+          <a href="#hero-form" class="price-btn">Get Started →</a>
         </div>
-        <div class="testi sr sr-d1">
-          <div class="testi-stars">★★★★★</div>
-          <p>"Their expertise in network security and system optimization has greatly improved our productivity. The custom solutions they designed for our specific needs have streamlined our processes, reducing costs."</p>
-          <div class="testi-author">John M.</div>
-          <div class="testi-role">Operations Manager, Manufacturing Company</div>
-        </div>
-        <div class="testi sr sr-d2">
-          <div class="testi-stars">★★★★★</div>
-          <p>"ETECH has transformed our IT landscape with their innovative solutions. Their cybersecurity measures have protected our network from numerous potential attacks, ensuring the safety of our data."</p>
-          <div class="testi-author">Sarah L.</div>
-          <div class="testi-role">CTO, Educational Institution</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ═══ CTA BANNER ═══ -->
-  <div class="cta-banner">
-    <div class="cta-banner-inner sr">
-      <h2>Every hour without protection is a gamble</h2>
-      <p>Get a free, no-obligation security assessment. See exactly where your vulnerabilities are and how to fix them.</p>
-      <div class="cta-banner-actions">
-        <a href="#hero-form" class="btn btn-light">Get My Free Assessment →</a>
-        <a href="tel:+13055550100" class="btn btn-ghost">📞 Call (305) 555-0100</a>
+        <div class="enterprise-card sr sr-d1">
+          <div>
+            <div class="enterprise-label">Enterprise</div>
+            <div class="enterprise-heading">100+ users or complex environments?</div>
+            <p class="enterprise-desc">Multi-site, custom compliance requirements, or large-scale deployments. Let's build something that fits.</p>
+          </div>
+          <div class="enterprise-actions">
+            <a href="tel:+13055550100" class="enterprise-btn-primary">📞 Call (305) 555-0100</a>
+            <a href="#contact" class="enterprise-btn-secondary">Send Us a Message</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1518,9 +1357,9 @@
     <div class="section-inner">
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="tag sr">Contact Us</div>
-          <h2 class="sr">Let's lock down<br>your business.</h2>
-          <p class="sr">Whether you need a full managed IT solution or a one-time security assessment, we're here. We respond within 1 business hour.</p>
+          <div class="tag sr">Contact</div>
+          <h2 class="sr">Ready to get started?</h2>
+          <p class="sr">Reach out and we'll respond within 1 business hour.</p>
 
           <div class="ci-item sr">
             <div class="ci-icon">📍</div>
@@ -1572,19 +1411,8 @@
               <input type="text" name="company" placeholder="Acme Corp">
             </div>
             <div class="cf-field">
-              <label>Service Interested In</label>
-              <select name="service">
-                <option value="managed-it">Managed IT Services</option>
-                <option value="cybersecurity">Cybersecurity</option>
-                <option value="cloud">Cloud Solutions</option>
-                <option value="compliance">Compliance & Risk</option>
-                <option value="assessment">Security Assessment</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="cf-field">
               <label>How Can We Help?</label>
-              <textarea name="message" placeholder="Tell us about your IT challenges, goals, or questions..."></textarea>
+              <textarea name="message" placeholder="Tell us about your team size, current setup, or questions..."></textarea>
             </div>
             <button type="submit" class="cf-submit">Send Message →</button>
             <p class="cf-note">🔒 Encrypted. Never shared. We respond within 1 business hour.</p>
@@ -1594,7 +1422,7 @@
     </div>
   </div>
 
-  <!-- ═══ FOOTER (dark) ═══ -->
+  <!-- ═══ FOOTER ═══ -->
   <footer>
     <div class="footer-inner">
       <div class="footer-grid">
@@ -1603,7 +1431,7 @@
             <div class="logo-mark">E/T</div>
             <div class="logo-word"><em>ETECH</em> IT</div>
           </a>
-          <p>Enterprise cybersecurity and managed IT for organizations that demand real protection, not empty promises.</p>
+          <p>Full-stack managed IT and cybersecurity. One provider, flat monthly pricing.</p>
         </div>
         <div class="footer-col">
           <h5>Services</h5>
@@ -1615,8 +1443,7 @@
         </div>
         <div class="footer-col">
           <h5>Company</h5>
-          <a href="#results">About ETECH</a>
-          <a href="#results">Client Results</a>
+          <a href="#pricing">Pricing</a>
           <a href="#contact">Contact</a>
           <a href="#">Privacy Policy</a>
         </div>
@@ -1637,15 +1464,7 @@
   <script>
     // Nav scroll
     const nav = document.getElementById('nav');
-    const sticky = document.getElementById('stickyCta');
-    const heroForm = document.getElementById('hero-form');
-
-    const onScroll = () => {
-      nav.classList.toggle('pinned', scrollY > 30);
-      if (heroForm) {
-        sticky.classList.toggle('show', heroForm.getBoundingClientRect().bottom < 0);
-      }
-    };
+    const onScroll = () => nav.classList.toggle('pinned', scrollY > 30);
     addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
