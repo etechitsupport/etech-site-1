@@ -1201,11 +1201,8 @@
       <div class="hero-form-wrap" id="hero-form">
         <div class="hf-title">Get Your Free Security Assessment</div>
         <p class="hf-sub">See what hackers see. <strong>100% free, zero obligation.</strong></p>
-        <form id="heroForm" action="https://formsubmit.co/info@etechitsupport.com" method="POST">
-          <input type="hidden" name="_subject" value="🔒 New Lead: Free Security Assessment">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://etechitsupport.com/thank-you">
-          <input type="hidden" name="_template" value="box">
+        <form id="heroForm">
+          <input type="hidden" name="formType" value="assessment">
           <div class="hf-row">
             <div class="hf-field">
               <label for="hf-name">Full Name *</label>
@@ -1380,11 +1377,8 @@
 
         <div class="contact-form-full sr">
           <div class="cf-title">Send Us a Message</div>
-          <form action="https://formsubmit.co/info@etechitsupport.com" method="POST">
-            <input type="hidden" name="_subject" value="📩 New Contact: ETECH Website">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://etechitsupport.com/thank-you">
-            <input type="hidden" name="_template" value="box">
+          <form id="contactForm">
+            <input type="hidden" name="formType" value="contact">
             <div class="cf-row">
               <div class="cf-field">
                 <label>First Name *</label>
@@ -1494,13 +1488,36 @@
       });
     });
 
-    // Form UX
+    // Form submission via Resend
     document.querySelectorAll('form').forEach(f => {
-      f.addEventListener('submit', function() {
+      f.addEventListener('submit', async function(e) {
+        e.preventDefault();
         const b = this.querySelector('button[type="submit"]');
+        const originalText = b.textContent;
         b.textContent = 'Sending...';
         b.style.opacity = '0.6';
         b.disabled = true;
+
+        try {
+          const data = Object.fromEntries(new FormData(this));
+          const res = await fetch('/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+          });
+
+          if (res.ok) {
+            window.location.href = '/thank-you';
+          } else {
+            b.textContent = 'Error — Please Try Again';
+            b.style.opacity = '1';
+            b.disabled = false;
+          }
+        } catch {
+          b.textContent = originalText;
+          b.style.opacity = '1';
+          b.disabled = false;
+        }
       });
     });
   </script>
